@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:tag="ww-wh">
+    <ListView
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/dashboard_listview"
+        p1:dividerHeight="0px"
+        p1:scrollbars="vertical"
+        p1:paddingTop="20px"
+        p1:tag="fw-fh"
+        p1:listSelector="#00000000" />
+</FrameLayout>

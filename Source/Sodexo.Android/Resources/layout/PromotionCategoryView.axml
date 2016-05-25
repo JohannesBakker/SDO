@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="160px"
+    android:layout_height="160px"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#ffffffff"
+    android:tag="sw-sh">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="fw-fh">
+        <ImageView
+            android:src="@drawable/outlet_default"
+            android:layout_width="80px"
+            android:layout_height="60px"
+            android:id="@+id/promotionview_picture_iv"
+            android:tag="sw-sh-sl-st"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="20px" />
+        <TextView
+            android:text="Name"
+            android:layout_width="140px"
+            android:id="@+id/promotionview_name_tv"
+            android:tag="sw-sh-sl-st-sfont-or"
+            android:gravity="center"
+            android:textColor="#ff555555"
+            android:textSize="22px"
+            android:lines="2"
+            android:layout_height="60px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="90px" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/promotionview_btn"
+            android:tag="fw-fh"
+            android:background="@null" />
+    </FrameLayout>
+</LinearLayout>

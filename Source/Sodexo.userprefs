@@ -1,0 +1,38 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SO7P49JJ59SKBEB6" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="sodexo.ipad2\ViewControllers\Dashboard\SDXDashboardVC.cs">
+    <Files>
+      <File FileName="sodexo.ipad2\ViewControllers\Dashboard\SDXDashboardVC.cs" Line="3" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Sodexo.Android" expanded="True" selected="True">
+            <Node name="Resources" expanded="True">
+              <Node name="drawable" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Sodexo.Ipad2" expanded="True">
+            <Node name="ViewControllers" expanded="True">
+              <Node name="Dashboard" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/MAC DATA/Projects/In_Progress/Andy/Git/sodexo-app/Sodexo.iOS/ViewControllers/Accounts/SDXAccountsVC.cs" line="82" column="4" />
+      <Breakpoint file="/Volumes/MAC DATA/Projects/In_Progress/Andy/Git/sodexo-app/Sodexo.Android/Fragments/Accounts/SDXLookupAccountFragment.cs" line="211" column="33" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>../Sodexo.Ipad/sodexo.ipad2/Sodexo.Ipad2.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.Sodexo.Android MonoForAntroid.PreferredDevice="4.7&quot; WXGA" MonoForAntroid.PreferredTheme="Theme.Light.NoTitleBar" />
+</Properties>

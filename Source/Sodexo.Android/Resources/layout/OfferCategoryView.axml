@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150px"
+    android:layout_height="150px"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:tag="sw-sh">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="fw-fh"
+        android:background="#b2ffffff">
+        <ImageView
+            android:src="@drawable/temp_offer"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:id="@+id/offercategoryview_picture_iv"
+            android:tag="sw-sh-gch-st"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:layout_marginTop="16px"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Cold Beverage Main Valut"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:id="@+id/offercategoryview_name_tv"
+            android:tag="sw-fh-gch-st-sfont-or"
+            android:gravity="center"
+            android:textSize="20px"
+            android:textColor="#ff555555"
+            android:lines="2"
+            android:layout_marginTop="60px"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/offercategoryview_btn"
+            android:tag="fw-fh"
+            android:background="@null" />
+    </FrameLayout>
+</LinearLayout>

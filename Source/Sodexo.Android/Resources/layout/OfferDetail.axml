@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="1008px"
+        android:id="@+id/offerdetail_sv"
+        android:tag="sw-sh"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="fw-wh-spr-spl-spb-spt"
+            android:paddingTop="20px"
+            android:paddingRight="20px"
+            android:paddingBottom="20px"
+            android:paddingLeft="20px">
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="600px"
+                android:layout_height="100px"
+                android:tag="sw-sh"
+                android:background="#ffffffff">
+                <ImageView
+                    android:src="@drawable/temp_offer"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:id="@+id/offerdetail_offer_picture_iv"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tag="sw-sh-sl-st"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="20px" />
+                <TextView
+                    android:text="Cold Beverage Main Vault"
+                    android:layout_width="440px"
+                    android:layout_height="42px"
+                    android:id="@+id/offerdetail_offer_name_tv"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textSize="30px"
+                    android:textColor="#ff505050"
+                    android:layout_marginLeft="120px"
+                    android:layout_marginTop="14px" />
+                <TextView
+                    android:text="PLANOGRAM:"
+                    android:layout_width="160px"
+                    android:layout_height="42px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="26px"
+                    android:textColor="#ff505050"
+                    android:layout_marginLeft="120px"
+                    android:layout_marginTop="50px"
+                    android:lines="1" />
+                <TextView
+                    android:text="NOT SELECTED"
+                    android:layout_width="260px"
+                    android:layout_height="42px"
+                    android:id="@+id/offerdetail_offer_status_tv"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="26px"
+                    android:textColor="#ffff0072"
+                    android:layout_marginLeft="270px"
+                    android:layout_marginTop="50px"
+                    android:lines="1" />
+                <ImageButton
+                    android:src="@drawable/btn_edit"
+                    android:layout_width="44px"
+                    android:layout_height="44px"
+                    android:id="@+id/offerdetail_offer_edit_imgbtn"
+                    android:tag="sw-sh-sl-st"
+                    android:scaleType="centerInside"
+                    android:background="@null"
+                    android:layout_marginLeft="530px"
+                    android:layout_marginTop="28px" />
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="fw-wh-st"
+                android:background="#ffffffff"
+                android:id="@+id/offerdetail_content_ll"
+                android:layout_marginTop="2px">
+                <ImageView
+                    android:layout_width="600px"
+                    android:layout_height="100px"
+                    android:id="@+id/offerdetail_planogram_picture_iv"
+                    android:tag="sw-sh"
+                    android:background="#ff1db446"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true" />
+                <TextView
+                    android:text="Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/offerdetail_planogram_detail_tv"
+                    android:tag="fw-wh-sfont-ol-spl-spr-spb-spt"
+                    android:textSize="24px"
+                    android:textColor="#ff555555"
+                    android:paddingTop="20px"
+                    android:paddingRight="20px"
+                    android:paddingBottom="20px"
+                    android:paddingLeft="20px" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="144px"
+                    android:background="#ffdddddd"
+                    android:tag="fw-sh-spt-spb"
+                    android:paddingTop="2px"
+                    android:paddingBottom="2px">
+                    <Button
+                        android:text="VIEW POG"
+                        android:layout_width="198px"
+                        android:layout_height="match_parent"
+                        android:id="@+id/offerdetail_viewpog_btn"
+                        android:tag="sw-fh-sfont-ol-spl-spr"
+                        android:textSize="30px"
+                        android:textColor="#ffff9300"
+                        android:background="#ffffffff"
+                        android:lines="2"
+                        android:paddingLeft="42px"
+                        android:paddingRight="42px" />
+                    <Button
+                        android:text="SEND FEEDBACK"
+                        android:layout_width="198px"
+                        android:layout_height="match_parent"
+                        android:id="@+id/offerdetail_sendfeedback_btn"
+                        android:tag="sw-fh-sfont-ol-spl-spr-sl"
+                        android:textSize="30px"
+                        android:textColor="#ffff9300"
+                        android:background="#ffffffff"
+                        android:lines="2"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
+                        android:layout_marginLeft="2px" />
+                    <Button
+                        android:text="SEND TO MY MAIL"
+                        android:layout_width="200px"
+                        android:layout_height="match_parent"
+                        android:id="@+id/offerdetail_sendtomail_btn"
+                        android:tag="sw-fh-sfont-ol-spl-spr-sl"
+                        android:textSize="30px"
+                        android:textColor="#ffff9300"
+                        android:background="#ffffffff"
+                        android:lines="2"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px"
+                        android:layout_marginLeft="2px" />
+                </LinearLayout>
+                <FrameLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:tag="fw-sh-st"
+                    android:layout_marginTop="10px">
+                    <ImageView
+                        android:src="@drawable/accounts_cell_info_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tag="fw-fh"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true" />
+                    <TextView
+                        android:text="STATUS: ACTIVE"
+                        android:layout_width="500px"
+                        android:layout_height="42px"
+                        android:id="@+id/offerdetail_planogram_status_tv"
+                        android:tag="sw-sh-sl-st-sfont-or"
+                        android:textSize="24px"
+                        android:textColor="#ff00bf4d"
+                        android:gravity="center"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginTop="22px" />
+                    <ImageView
+                        android:src="@drawable/img_active"
+                        android:layout_width="24px"
+                        android:layout_height="24px"
+                        android:id="@+id/offerdetail_planogram_status_iv"
+                        android:tag="sw-sh-sl-st"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:layout_marginLeft="288px"
+                        android:layout_marginTop="74px" />
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/offerdetail_photos_fl"
+                android:tag="fw-wh-st"
+                android:layout_marginTop="10px">
+                <ImageButton
+                    android:src="@drawable/icon_plus"
+                    android:layout_width="296px"
+                    android:layout_height="296px"
+                    android:id="@+id/offerdetail_photosview_add_imgbtn"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffffffff"
+                    android:scaleType="centerInside"
+                    android:cropToPadding="true"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="0px" />
+                <TextView
+                    android:text="TO ACTIVATE, ADD A PHOTO OF YOUR PLANOGRAM"
+                    android:layout_width="240px"
+                    android:layout_height="80px"
+                    android:id="@+id/offerdetail_photosview_addphoto_tv"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center"
+                    android:textSize="22px"
+                    android:textColor="#ff7f7f7f"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="14px"
+                    android:lines="2" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

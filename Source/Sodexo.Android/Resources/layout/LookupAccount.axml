@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="ww-wh">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="1008px"
+        android:id="@+id/lookupaccount_sv"
+        android:tag="sw-sh">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lookpaccount_ll"
+            android:tag="fw-fh">
+            <TextView
+                android:text="HI THERE!"
+                android:layout_width="640px"
+                android:layout_height="60px"
+                android:id="@+id/lookupaccount_title_tv"
+                android:tag="sw-sh-st-sfont-or"
+                android:gravity="center"
+                android:textSize="40px"
+                android:textColor="#ff383838"
+                android:layout_marginTop="20px" />
+            <TextView
+                android:text="Welcome to the Sodexo Retail Ranger App. We need a little information before we get started. Enter your unit information below and let us look up your account."
+                android:layout_width="540px"
+                android:layout_height="80px"
+                android:id="@+id/lookupaccount_desc_tv"
+                android:tag="sw-sh-sl-sfont-hnlt"
+                android:gravity="center"
+                android:textSize="20px"
+                android:textColor="#ff383838"
+                android:layout_marginLeft="50px" />
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="600px"
+                android:layout_height="104px"
+                android:id="@+id/lookupaccount_unit_number_fl"
+                android:tag="sw-sh-sl-st"
+                android:background="#ffffffff"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="5px">
+                <ImageView
+                    android:src="@drawable/indicator_accountsetup"
+                    android:layout_width="match_parent"
+                    android:layout_height="6px"
+                    android:tag="fw-sh"
+                    android:scaleType="centerCrop"
+                    android:cropToPadding="true"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imageView1" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="560px"
+                    android:layout_height="80px"
+                    android:id="@+id/lookupaccount_unit_number_et"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:hint="Enter unit number"
+                    android:numeric="decimal"
+                    android:maxLength="8"
+                    android:textSize="60px"
+                    android:textColor="#ff000000"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:background="@null" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="90px" />
+                <FrameLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="220px"
+                    android:layout_height="60px"
+                    android:id="@+id/lookupaccount_delete_account_fl"
+                    android:tag="sw-sh-sl-st"
+                    android:layout_marginLeft="360px"
+                    android:layout_marginTop="22px"
+                    android:background="#fffd1606">
+                    <ImageView
+                        android:src="@drawable/icon_delete"
+                        android:layout_width="32px"
+                        android:layout_height="40px"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:tag="sw-sh-sl-st"
+                        android:layout_marginTop="10px"
+                        android:layout_marginLeft="10px"
+                        android:id="@+id/imageView2" />
+                    <Button
+                        android:text="DELETE ACCOUNT"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tag="fw-fh-sfont-or-spl"
+                        android:background="@null"
+                        android:textSize="20px"
+                        android:paddingLeft="52px"
+                        android:textColor="#ffffffff"
+                        android:id="@+id/lookupaccount_delete_account_btn" />
+                </FrameLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="600px"
+                android:layout_height="80px"
+                android:id="@+id/lookupaccount_lookup_fl"
+                android:tag="sw-sh-sl"
+                android:background="#ff7aec0c"
+                android:layout_marginLeft="20px">
+                <ImageView
+                    android:src="@drawable/icon_search"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginLeft="120px"
+                    android:tag="sw-sh-sl-st"
+                    android:id="@+id/imageView3" />
+                <Button
+                    android:text="LOOK UP ACCOUNT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:textSize="30px"
+                    android:textColor="#ffffffff"
+                    android:tag="fw-fh-sfont-or"
+                    android:id="@+id/lookupaccount_lookup_btn" />
+            </FrameLayout>
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="600px"
+                android:layout_height="680px"
+                android:id="@+id/lookupaccount_unit_content_fl"
+                android:tag="sw-sh-sl"
+                android:layout_marginLeft="20px">
+                <TextView
+                    android:text="UNIT NAME"
+                    android:layout_width="160px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:lines="1" />
+                <TextView
+                    android:text="Campus Services"
+                    android:layout_width="380px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff868686"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginTop="30px"
+                    android:lines="1"
+                    android:id="@+id/lookupaccount_unit_name_tv" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="80px" />
+                <TextView
+                    android:text="ADDRESS1"
+                    android:layout_width="160px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="90px"
+                    android:lines="1" />
+                <TextView
+                    android:text="4th Street 33"
+                    android:layout_width="380px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff868686"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginTop="90px"
+                    android:lines="1"
+                    android:id="@+id/lookupaccount_address1_tv" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="140px" />
+                <TextView
+                    android:text="ADDRESS2"
+                    android:layout_width="160px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="150px"
+                    android:lines="1" />
+                <TextView
+                    android:text="458"
+                    android:layout_width="380px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff868686"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginTop="150px"
+                    android:lines="1"
+                    android:id="@+id/lookupaccount_address2_tv" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="200px" />
+                <TextView
+                    android:text="CITY"
+                    android:layout_width="160px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="210px"
+                    android:lines="1" />
+                <TextView
+                    android:text="New York"
+                    android:layout_width="380px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff868686"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginTop="210px"
+                    android:lines="1"
+                    android:id="@+id/lookupaccount_city_tv" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="260px" />
+                <TextView
+                    android:text="STATE"
+                    android:layout_width="160px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="270px"
+                    android:lines="1" />
+                <TextView
+                    android:text="NY"
+                    android:layout_width="380px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff868686"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginTop="270px"
+                    android:lines="1"
+                    android:id="@+id/lookupaccount_state_tv" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="320px" />
+                <TextView
+                    android:text="ZIP"
+                    android:layout_width="160px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="330px"
+                    android:lines="1" />
+                <TextView
+                    android:text="45690"
+                    android:layout_width="380px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff868686"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginTop="330px"
+                    android:lines="1"
+                    android:id="@+id/lookupaccount_zip_tv" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="380px" />
+                <TextView
+                    android:text="BUSINESS SEGMENT"
+                    android:layout_width="260px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="390px"
+                    android:lines="1" />
+                <TextView
+                    android:text="Campus Services"
+                    android:layout_width="300px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff868686"
+                    android:layout_marginLeft="280px"
+                    android:layout_marginTop="390px"
+                    android:lines="1"
+                    android:id="@+id/lookupaccount_business_segment_tv" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="440px" />
+                <TextView
+                    android:text="SELECT CONSUMER TYPE"
+                    android:layout_width="460px"
+                    android:layout_height="50px"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff7aec0c"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="450px"
+                    android:lines="1" />
+                <Spinner
+                    android:layout_width="550px"
+                    android:layout_height="70px"
+                    android:id="@+id/lookupaccount_consumer_type_sp"
+                    android:tag="sw-sh-sl-st"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="490px"
+                    android:prompt="@string/consumer_type_select_prompt"
+                    android:background="@null" />
+                <ImageView
+                    android:src="@drawable/icon_bottom_arrow"
+                    android:layout_width="12px"
+                    android:layout_height="8px"
+                    android:tag="sw-sh-sl-st"
+                    android:scaleType="centerInside"
+                    android:cropToPadding="true"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="520px"
+                    android:layout_marginTop="522px" />
+                <TextView
+                    android:layout_width="580px"
+                    android:layout_height="2px"
+                    android:tag="sw-sh-sl-st"
+                    android:background="#ffc5c5c5"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="560px" />
+                <Button
+                    android:text="NEXT"
+                    android:layout_width="600px"
+                    android:layout_height="80px"
+                    android:gravity="center"
+                    android:textSize="30px"
+                    android:textColor="#ffffffff"
+                    android:tag="sw-sh-st-sfont-or"
+                    android:id="@+id/lookupaccount_next_btn"
+                    android:layout_marginTop="580px"
+                    android:background="#ff7aec0c" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

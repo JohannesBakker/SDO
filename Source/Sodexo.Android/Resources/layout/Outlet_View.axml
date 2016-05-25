@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:tag="ww-wh">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="130px"
+        android:tag="sw-sh"
+        android:background="#ffffffff">
+        <ImageView
+            android:src="@drawable/outlet_default"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:id="@+id/outlet_view_picture_iv"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:tag="sw-sh" />
+        <TextView
+            android:text="Outlet"
+            android:layout_width="400px"
+            android:layout_height="50px"
+            android:id="@+id/outlet_view_name_tv"
+            android:tag="sw-sh-sl-st-sfont-or"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="20px"
+            android:lines="1"
+            android:textColor="#ff505050"
+            android:textSize="30px" />
+    </FrameLayout>
+</LinearLayout>

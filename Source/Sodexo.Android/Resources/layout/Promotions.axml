@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="1008px"
+        android:id="@+id/promotions_listview"
+        android:tag="sw-sh-spt-spl-spr"
+        android:paddingTop="20px"
+        android:paddingRight="20px"
+        android:paddingLeft="20px"
+        android:scrollbars="none"
+        android:drawSelectorOnTop="false"
+        android:listSelector="#00000000" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="wrap_content"
+        android:id="@+id/promotions_filter_ll"
+        android:tag="sw-wh-st"
+        android:background="#fff5f5f5"
+        android:layout_marginTop="0px">
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="640px"
+            android:layout_height="wrap_content"
+            android:id="@+id/promotions_filter_categories_fl"
+            android:tag="sw-wh" />
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:id="@+id/promotions_filter_search_fl"
+            android:tag="fw-sh"
+            android:background="#ffffffff">
+            <ImageView
+                android:src="@drawable/promotion_cell_separator"
+                android:layout_width="match_parent"
+                android:layout_height="6px"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tag="fw-sh" />
+            <EditText
+                android:layout_width="600px"
+                android:layout_height="60px"
+                android:id="@+id/promotions_filter_search_et"
+                android:tag="sw-sh-sl-st-sfont-ol"
+                android:hint="Enter search item"
+                android:gravity="center_vertical"
+                android:textSize="30px"
+                android:textColor="#ff555555"
+                android:background="@null"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:tag="fw-sh-st"
+                android:background="#ffc8c7cc"
+                android:layout_marginTop="90px" />
+            <Button
+                android:text="APPLY"
+                android:layout_width="300px"
+                android:layout_height="60px"
+                android:id="@+id/promotions_filter_apply_btn"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="30px"
+                android:textColor="#ffffffff"
+                android:background="#ff7aec0c"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="114px" />
+            <Button
+                android:text="CANCEL"
+                android:layout_width="300px"
+                android:layout_height="60px"
+                android:id="@+id/promotions_filter_cancel_btn"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="30px"
+                android:textColor="#ffffffff"
+                android:background="#ffdbdbdb"
+                android:layout_marginLeft="320px"
+                android:layout_marginTop="114px" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

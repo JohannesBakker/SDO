@@ -1,0 +1,7 @@
+/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll
+/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
+/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache/Link/ModernHttpClient.dll
+/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache/Link/HttpClient.exe
+/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache/Link/System.Net.Http.dll
+/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll

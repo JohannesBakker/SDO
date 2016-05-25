@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{11FCA954-050D-4188-93D0-DF1932B19AF6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Sodexo.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>SodexoiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;APPSTORE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>c98d38f8-c4ca-4488-8913-f4b228bfbde4</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;ADHOC;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>3b290b76-57f0-436c-8d16-a2376ccf7409</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;APPSTORE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>c98d38f8-c4ca-4488-8913-f4b228bfbde4</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="HockeyApp.iOS">
+      <HintPath>..\Components\hockeyappios-3.5.5\lib\ios\HockeyApp.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Messaging.iOS">
+      <HintPath>..\Components\azure-messaging-1.1.5\lib\ios\Microsoft.WindowsAzure.Messaging.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.iOS">
+      <HintPath>..\Components\xamarin.auth-1.2.2\lib\ios\Xamarin.Auth.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Sodexo.RetailActivation.Portable">
+      <HintPath>..\PCL\Sodexo.RetailActivation.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\Components\modernhttpclient-2.1.1\lib\ios\ModernHttpClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\login_bg.png" />
+    <BundleResource Include="Resources\icon_female.png" />
+    <BundleResource Include="Resources\icon_lock.png" />
+    <BundleResource Include="Resources\login_btn_login.png" />
+    <BundleResource Include="Resources\login_logo.png" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\login_title.png" />
+    <BundleResource Include="Resources\menu_me_on.png" />
+    <BundleResource Include="Resources\menu_me_off.png" />
+    <BundleResource Include="Resources\menu_prices_on.png" />
+    <BundleResource Include="Resources\menu_prices_off.png" />
+    <BundleResource Include="Resources\menu_promotions_off.png" />
+    <BundleResource Include="Resources\menu_promotions_on.png" />
+    <BundleResource Include="Resources\menu_accounts_on.png" />
+    <BundleResource Include="Resources\menu_accounts_off.png" />
+    <BundleResource Include="Resources\menu_dashboard_on.png" />
+    <BundleResource Include="Resources\menu_dashboard_off.png" />
+    <BundleResource Include="Resources\icon_menu%402x.png" />
+    <BundleResource Include="Resources\icon_menu.png" />
+    <BundleResource Include="Resources\dashboard_header_bg.png" />
+    <BundleResource Include="Resources\me_header_bg.png" />
+    <BundleResource Include="Resources\prices_header_bg.png" />
+    <BundleResource Include="Resources\feedback_header_bg.png" />
+    <BundleResource Include="Resources\promotions_header_bg.png" />
+    <BundleResource Include="Resources\accounts_header_bg.png" />
+    <BundleResource Include="Resources\dashboard_header_bg%402x.png" />
+    <BundleResource Include="Resources\me_header_bg%402x.png" />
+    <BundleResource Include="Resources\prices_header_bg%402x.png" />
+    <BundleResource Include="Resources\feedback_header_bg%402x.png" />
+    <BundleResource Include="Resources\promotions_header_bg%402x.png" />
+    <BundleResource Include="Resources\accounts_header_bg%402x.png" />
+    <BundleResource Include="Resources\icon_plus.png" />
+    <BundleResource Include="Resources\accounts_cell_separate_line.png" />
+    <BundleResource Include="Resources\icon_right_arrow.png" />
+    <BundleResource Include="Resources\accounts_cell_info_bg.png" />
+    <BundleResource Include="Resources\icon_back.png" />
+    <BundleResource Include="Resources\icon_back%402x.png" />
+    <BundleResource Include="Resources\icon_add.png" />
+    <BundleResource Include="Resources\icon_add%402x.png" />
+    <BundleResource Include="Resources\icon_info.png" />
+    <BundleResource Include="Resources\icon_info%402x.png" />
+    <BundleResource Include="Resources\background.png" />
+    <BundleResource Include="Resources\icon_bottom_arrow.png" />
+    <BundleResource Include="Resources\btn_info.png" />
+    <BundleResource Include="Resources\accounts_btn_next.png" />
+    <BundleResource Include="Resources\menu_feedback_off.png" />
+    <BundleResource Include="Resources\menu_feedback_on.png" />
+    <BundleResource Include="Resources\.DS_Store" />
+    <BundleResource Include="Resources\btn_edit.png" />
+    <BundleResource Include="Resources\line_dots.png" />
+    <BundleResource Include="Resources\temp_offer.png" />
+    <BundleResource Include="Resources\text_no_planogram.png" />
+    <BundleResource Include="Resources\text_with_planogram.png" />
+    <BundleResource Include="Resources\info_btn_green.png" />
+    <BundleResource Include="Resources\line_solid_light_gray.png" />
+    <BundleResource Include="Resources\img_add.png" />
+    <BundleResource Include="Resources\btn_delete.png" />
+    <BundleResource Include="Resources\temp_offer_added.png" />
+    <BundleResource Include="Resources\img_logout.png" />
+    <BundleResource Include="Resources\img_profile.png" />
+    <BundleResource Include="Resources\img_profile%402x.png" />
+    <BundleResource Include="Resources\img_logout%402x.png" />
+    <BundleResource Include="Resources\addoffer_bg.png" />
+    <BundleResource Include="Resources\progress_text_bg.png" />
+    <BundleResource Include="Resources\progress_full.png" />
+    <BundleResource Include="Resources\progress_empty.png" />
+    <BundleResource Include="Resources\indicator_accountsetup.png" />
+    <BundleResource Include="Resources\indicator_promotion.png" />
+    <BundleResource Include="Resources\symbol_planogram.png" />
+    <BundleResource Include="Resources\symbol_promotion.png" />
+    <BundleResource Include="Resources\symbol_accountsetup.png" />
+    <BundleResource Include="Resources\symbol_surveyorfeedback.png" />
+    <BundleResource Include="Resources\menu_logo_off.png" />
+    <BundleResource Include="Resources\menu_logo_on.png" />
+    <BundleResource Include="Resources\symbol_usersetup.png" />
+    <BundleResource Include="Resources\indicator_usersetup.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\img_inactive.png" />
+    <BundleResource Include="Resources\img_active.png" />
+    <BundleResource Include="Resources\promotion_cell_separator.png" />
+    <BundleResource Include="Resources\icon_filter.png" />
+    <BundleResource Include="Resources\icon_filter%402x.png" />
+    <BundleResource Include="Resources\icon_plus%402x.png" />
+    <BundleResource Include="Resources\promotion_all.png" />
+    <BundleResource Include="Resources\promotion_pricing.png" />
+    <BundleResource Include="Resources\promotion_in_my_kitchen.png" />
+    <BundleResource Include="Resources\promotion_mindful.png" />
+    <BundleResource Include="Resources\promotion_mutualized.png" />
+    <BundleResource Include="Resources\promotion_hot_beverages.png" />
+    <BundleResource Include="Resources\promotion_simply_to_go.png" />
+    <BundleResource Include="Resources\promotion_cold_beverage.png" />
+    <BundleResource Include="Resources\radiobtn_full.png" />
+    <BundleResource Include="Resources\radiobtn_empty.png" />
+    <BundleResource Include="Resources\star_full.png" />
+    <BundleResource Include="Resources\star_empty.png" />
+    <BundleResource Include="Resources\indicator_surveyorfeedback.png" />
+    <BundleResource Include="Resources\background%402x.png" />
+    <BundleResource Include="Resources\temp_planogram.png" />
+    <BundleResource Include="Resources\icon_m.png" />
+    <BundleResource Include="Resources\icon_m%402x.png" />
+    <BundleResource Include="Resources\icon_basic.png" />
+    <BundleResource Include="Resources\icon_basic%402x.png" />
+    <BundleResource Include="Fonts\Karla-Bold.ttf" />
+    <BundleResource Include="Fonts\Karla-Italic.ttf" />
+    <BundleResource Include="Fonts\Karla-Regular.ttf" />
+    <BundleResource Include="Fonts\Oswald-Bold.ttf" />
+    <BundleResource Include="Fonts\Oswald-Light.ttf" />
+    <BundleResource Include="Fonts\Oswald-Regular.ttf" />
+    <BundleResource Include="Resources\img_cold_beverage_dispensed.png" />
+    <BundleResource Include="Resources\icon_delete%402x.png" />
+    <BundleResource Include="Resources\icon_search%402x.png" />
+    <BundleResource Include="Resources\icon_search.png" />
+    <BundleResource Include="Resources\icon_delete.png" />
+    <BundleResource Include="Resources\outlet_default.png" />
+    <BundleResource Include="Resources\symbol_generalinfo.png" />
+    <BundleResource Include="Resources\indicator_generalinfo.png" />
+    <BundleResource Include="Resources\indicator_planogram.png" />
+    <BundleResource Include="Resources\me_background.png" />
+    <BundleResource Include="Resources\img_offer_categories_1.png" />
+    <BundleResource Include="Resources\img_offer_categories_2.png" />
+    <BundleResource Include="Resources\img_offer_categories_3.png" />
+    <BundleResource Include="Resources\img_offer_categories_4.png" />
+    <BundleResource Include="Resources\img_offer_categories_5.png" />
+    <BundleResource Include="Resources\img_offer_categories_6.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Splash.png" />
+    <BundleResource Include="Resources\Splash-568.png" />
+    <BundleResource Include="Resources\menu_accounts_off%402x.png" />
+    <BundleResource Include="Resources\menu_accounts_on%402x.png" />
+    <BundleResource Include="Resources\menu_dashboard_off%402x.png" />
+    <BundleResource Include="Resources\menu_dashboard_on%402x.png" />
+    <BundleResource Include="Resources\menu_feedback_off%402x.png" />
+    <BundleResource Include="Resources\menu_feedback_on%402x.png" />
+    <BundleResource Include="Resources\menu_me_off%402x.png" />
+    <BundleResource Include="Resources\menu_me_on%402x.png" />
+    <BundleResource Include="Resources\menu_prices_off%402x.png" />
+    <BundleResource Include="Resources\menu_prices_on%402x.png" />
+    <BundleResource Include="Resources\menu_promotions_off%402x.png" />
+    <BundleResource Include="Resources\menu_promotions_on%402x.png" />
+    <BundleResource Include="Resources\symbol_accountsetup%402x.png" />
+    <BundleResource Include="Resources\symbol_generalinfo%402x.png" />
+    <BundleResource Include="Resources\symbol_planogram%402x.png" />
+    <BundleResource Include="Resources\symbol_promotion%402x.png" />
+    <BundleResource Include="Resources\symbol_surveyorfeedback%402x.png" />
+    <BundleResource Include="Resources\symbol_usersetup%402x.png" />
+    <BundleResource Include="Resources\icon_advanced.png" />
+    <BundleResource Include="Resources\icon_advanced%402x.png" />
+    <BundleResource Include="Resources\icon_quick_lookup.png" />
+    <BundleResource Include="Resources\icon_quick_lookup%402x.png" />
+    <BundleResource Include="Resources\selected_checkmark.png" />
+    <BundleResource Include="Resources\selected_checkmark%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Custom\EmptySegue.cs" />
+    <Compile Include="Custom\Common.cs" />
+    <Compile Include="AppDelegate\AppDelegate.cs" />
+    <Compile Include="Custom\SDXBaseVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXAccountDetailVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXAccountDetailVC.designer.cs">
+      <DependentUpon>SDXAccountDetailVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Accounts\SDXAccountsVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXAccountsVC.designer.cs">
+      <DependentUpon>SDXAccountsVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Accounts\SDXAddAccountVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXAddAccountVC.designer.cs">
+      <DependentUpon>SDXAddAccountVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Accounts\SDXAddOutletVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXAddOutletVC.designer.cs">
+      <DependentUpon>SDXAddOutletVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Dashboard\SDXDashboardVC.cs" />
+    <Compile Include="ViewControllers\Dashboard\SDXDashboardVC.designer.cs">
+      <DependentUpon>SDXDashboardVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Feedback\SDXFeedbackVC.cs" />
+    <Compile Include="ViewControllers\Feedback\SDXFeedbackVC.designer.cs">
+      <DependentUpon>SDXFeedbackVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Login\SDXLoginVC.cs" />
+    <Compile Include="ViewControllers\Login\SDXLoginVC.designer.cs">
+      <DependentUpon>SDXLoginVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Main\SDXMainVC.cs" />
+    <Compile Include="ViewControllers\Main\SDXMainVC.designer.cs">
+      <DependentUpon>SDXMainVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Me\SDXMeVC.cs" />
+    <Compile Include="ViewControllers\Me\SDXMeVC.designer.cs">
+      <DependentUpon>SDXMeVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Prices\SDXPricesVC.cs" />
+    <Compile Include="ViewControllers\Prices\SDXPricesVC.designer.cs">
+      <DependentUpon>SDXPricesVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Promotions\SDXPromotionsVC.designer.cs">
+      <DependentUpon>SDXPromotionsVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Promotions\SDXPromotionsVC.cs" />
+    <Compile Include="Custom\SDXBaseVC.designer.cs">
+      <DependentUpon>SDXBaseVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\SDXLoadingView.cs" />
+    <Compile Include="Custom\SDXScrollView.cs" />
+    <Compile Include="Custom\SDXDropTableView.cs" />
+    <Compile Include="ViewControllers\Promotions\SDXPromotionDetailVC.cs" />
+    <Compile Include="ViewControllers\Promotions\SDXPromotionDetailVC.designer.cs">
+      <DependentUpon>SDXPromotionDetailVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\JHImagePickHelper.cs" />
+    <Compile Include="TableViews\Account\SDXAccountTableDelegate.cs" />
+    <Compile Include="TableViews\Account\SDXAccountTableDataSource.cs" />
+    <Compile Include="TableViews\Account\SDXAccountCell.cs" />
+    <Compile Include="TableViews\Account\SDXAccountCell.designer.cs">
+      <DependentUpon>SDXAccountCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Outlet\SDXOutletTableDelegate.cs" />
+    <Compile Include="TableViews\Outlet\SDXOutletTableDataSource.cs" />
+    <Compile Include="TableViews\Outlet\SDXOutletCell.cs" />
+    <Compile Include="TableViews\Outlet\SDXOutletCell.designer.cs">
+      <DependentUpon>SDXOutletCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\AddOutlet\SDXAddOutletTableDelegate.cs" />
+    <Compile Include="TableViews\AddOutlet\SDXAddOutletTableDataSource.cs" />
+    <Compile Include="TableViews\AddOutlet\SDXAddOutletCell.cs" />
+    <Compile Include="TableViews\AddOutlet\SDXAddOutletCell.designer.cs">
+      <DependentUpon>SDXAddOutletCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Dashboard\SDXDashboardTableDelegate.cs" />
+    <Compile Include="TableViews\Dashboard\SDXDashboardTableDataSource.cs" />
+    <Compile Include="TableViews\Dashboard\SDXDashboardCell.cs" />
+    <Compile Include="TableViews\Dashboard\SDXDashboardCell.designer.cs">
+      <DependentUpon>SDXDashboardCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Offer\SDXOfferTableViewDelegate.cs" />
+    <Compile Include="TableViews\Offer\SDXOfferTableViewDataSource.cs" />
+    <Compile Include="TableViews\Offer\SDXOfferCell.cs" />
+    <Compile Include="TableViews\Offer\SDXOfferCell.designer.cs">
+      <DependentUpon>SDXOfferCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Promotion\SDXPromotionTableDelegate.cs" />
+    <Compile Include="TableViews\Promotion\SDXPromotionTableDataSource.cs" />
+    <Compile Include="TableViews\Promotion\SDXPromotionCell.cs" />
+    <Compile Include="TableViews\Promotion\SDXPromotionCell.designer.cs">
+      <DependentUpon>SDXPromotionCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Accounts\SDXSelectPlanogramVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXSelectPlanogramVC.designer.cs">
+      <DependentUpon>SDXSelectPlanogramVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Feedback\SDXLeaveFeedbackVC.cs" />
+    <Compile Include="ViewControllers\Feedback\SDXLeaveFeedbackVC.designer.cs">
+      <DependentUpon>SDXLeaveFeedbackVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Feedback\SDXPlanogramsVC.cs" />
+    <Compile Include="ViewControllers\Feedback\SDXPlanogramsVC.designer.cs">
+      <DependentUpon>SDXPlanogramsVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Planogram\SDXPlanogramCell.cs" />
+    <Compile Include="TableViews\Planogram\SDXPlanogramCell.designer.cs">
+      <DependentUpon>SDXPlanogramCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Planogram\SDXPlanogramTableDelegate.cs" />
+    <Compile Include="TableViews\Planogram\SDXPlanogramTableDataSource.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXOfferDetailVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXOfferDetailVC.designer.cs">
+      <DependentUpon>SDXOfferDetailVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Accounts\SDXFullImageVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXFullImageVC.designer.cs">
+      <DependentUpon>SDXFullImageVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SDXOfferCategoryView.cs" />
+    <Compile Include="Views\SDXOfferCategoryView.designer.cs">
+      <DependentUpon>SDXOfferCategoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Prices\SDXPricesResultVC.cs" />
+    <Compile Include="ViewControllers\Prices\SDXPricesResultVC.designer.cs">
+      <DependentUpon>SDXPricesResultVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Prices\SDXPricesCell.cs" />
+    <Compile Include="TableViews\Prices\SDXPricesCell.designer.cs">
+      <DependentUpon>SDXPricesCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViews\Prices\SDXPricesTableDelegate.cs" />
+    <Compile Include="TableViews\Prices\SDXPricesTableDataSource.cs" />
+    <Compile Include="Custom\SDXLabel.cs" />
+    <Compile Include="Custom\SDXButton.cs" />
+    <Compile Include="Custom\SDXTextField.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXLookupAccountVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXLookupAccountVC.designer.cs">
+      <DependentUpon>SDXLookupAccountVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SDXOutletView.cs" />
+    <Compile Include="Views\SDXOutletView.designer.cs">
+      <DependentUpon>SDXOutletView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SDXOfferView.cs" />
+    <Compile Include="Views\SDXOfferView.designer.cs">
+      <DependentUpon>SDXOfferView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\FedAuthWebRedirectAuthenticator.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXDocVC.cs" />
+    <Compile Include="ViewControllers\Accounts\SDXDocVC.designer.cs">
+      <DependentUpon>SDXDocVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SDXDecisionTreeRadioView.cs" />
+    <Compile Include="Views\SDXDecisionTreeRadioView.designer.cs">
+      <DependentUpon>SDXDecisionTreeRadioView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+    <InterfaceDefinition Include="Views\SDXOfferCategoryView.xib" />
+    <InterfaceDefinition Include="Views\SDXOutletView.xib" />
+    <InterfaceDefinition Include="Views\SDXOfferView.xib" />
+    <InterfaceDefinition Include="Views\SDXDecisionTreeRadioView.xib" />
+  </ItemGroup>
+  <Import Project="..\Sodexo.Core\Sodexo.Core.projitems" Label="Shared" Condition="Exists('..\Sodexo.Core\Sodexo.Core.projitems')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="hockeyappios">
+      <Version>3.5.5</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="azure-messaging">
+      <Version>1.1.5</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.auth">
+      <Version>1.2.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="modernhttpclient">
+      <Version>2.1.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>

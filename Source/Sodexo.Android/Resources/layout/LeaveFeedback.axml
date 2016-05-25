@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="1008px"
+        android:tag="sw-sh"
+        android:scrollbars="none"
+        android:id="@+id/leavefeedback_sv">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="fw-wh-spl-spt-spr-spb"
+            android:paddingTop="20px"
+            android:paddingRight="20px"
+            android:paddingBottom="20px"
+            android:paddingLeft="20px">
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:id="@+id/leavefeedback_title_fl"
+                android:tag="fw-sh">
+                <TextView
+                    android:text="FEEDBACK FOR THE APP"
+                    android:layout_width="560px"
+                    android:layout_height="80px"
+                    android:id="@+id/leavefeedback_title_tv"
+                    android:gravity="center_vertical"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:textSize="40px"
+                    android:textColor="#ff555555"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="20px"
+                    android:lines="1" />
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/leavefeedback_promotion_ll"
+                android:tag="fw-wh">
+                <ImageView
+                    android:layout_width="600px"
+                    android:id="@+id/leavefeedback_promotion_picture_iv"
+                    android:tag="sw-sh"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:background="#ff0e973a"
+                    android:layout_height="100px" />
+                <FrameLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:tag="sw-wh-spb"
+                    android:paddingBottom="20px">
+                    <ImageView
+                        android:src="@drawable/promotion_cell_separator"
+                        android:layout_width="match_parent"
+                        android:layout_height="6px"
+                        android:tag="fw-sh"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true" />
+                    <FrameLayout
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:tag="fw-sh-st"
+                        android:layout_marginTop="6px"
+                        android:background="#ffffffff">
+                        <ImageView
+                            android:src="@drawable/accounts_cell_info_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:tag="fw-fh"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true" />
+                        <ImageView
+                            android:src="@drawable/outlet_default"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:id="@+id/leavefeedback_promotion_category_iv"
+                            android:scaleType="centerInside"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:tag="sw-sh-sl-st"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="30px" />
+                        <TextView
+                            android:text="IN MY KITCHEN"
+                            android:layout_width="440px"
+                            android:layout_height="50px"
+                            android:id="@+id/leavefeedback_promotion_name_tv"
+                            android:tag="sw-sh-sl-st-sfont-or"
+                            android:gravity="center_vertical"
+                            android:textSize="34px"
+                            android:textColor="#ff555555"
+                            android:lines="1"
+                            android:layout_marginLeft="130px"
+                            android:layout_marginTop="12px" />
+                        <TextView
+                            android:text="START:07/20/14-FINISH:07/29/14"
+                            android:layout_width="440px"
+                            android:layout_height="44px"
+                            android:id="@+id/leavefeedback_promotion_date_tv"
+                            android:tag="sw-sh-sl-st-sfont-or"
+                            android:textSize="24px"
+                            android:textColor="#ff555555"
+                            android:gravity="center_vertical"
+                            android:lines="1"
+                            android:layout_marginLeft="130px"
+                            android:layout_marginTop="62px" />
+                    </FrameLayout>
+                    <TextView
+                        android:text="Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/leavefeedback_promotion_desc_tv"
+                        android:tag="fw-wh-spl-spb-spr-spt-sfont-hnlt-st"
+                        android:gravity="center_vertical"
+                        android:background="#ffffffff"
+                        android:textSize="24px"
+                        android:textColor="#ff555555"
+                        android:layout_marginTop="126px"
+                        android:paddingTop="20px"
+                        android:paddingBottom="20px"
+                        android:paddingRight="20px"
+                        android:paddingLeft="130px" />
+                    <ImageView
+                        android:src="@drawable/img_active"
+                        android:layout_width="24px"
+                        android:layout_height="24px"
+                        android:id="@+id/leavefeedback_promotion_status_iv"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:tag="sw-sh-sl-st"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginTop="114px" />
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="600px"
+                android:layout_height="100px"
+                android:tag="sw-sh"
+                android:background="#ffffffff"
+                android:id="@+id/leavefeedback_offer_fl">
+                <ImageView
+                    android:src="@drawable/temp_offer"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:id="@+id/leavefeedback_offer_picture_iv"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tag="sw-sh-sl-st"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="20px" />
+                <TextView
+                    android:text="Cold Beverage Main Vault"
+                    android:layout_width="440px"
+                    android:layout_height="42px"
+                    android:id="@+id/leavefeedback_offer_name_tv"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textSize="30px"
+                    android:textColor="#ff505050"
+                    android:layout_marginLeft="120px"
+                    android:layout_marginTop="14px" />
+                <TextView
+                    android:text="PLANOGRAM:"
+                    android:layout_width="160px"
+                    android:layout_height="42px"
+                    android:tag="sw-sh-sl-st-sfont-ol"
+                    android:gravity="center_vertical"
+                    android:textSize="26px"
+                    android:textColor="#ff505050"
+                    android:layout_marginLeft="120px"
+                    android:layout_marginTop="50px"
+                    android:lines="1" />
+                <TextView
+                    android:text="NOT SELECTED"
+                    android:layout_width="260px"
+                    android:layout_height="42px"
+                    android:id="@+id/leavefeedback_offer_status_tv"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:gravity="center_vertical"
+                    android:textSize="26px"
+                    android:textColor="#ffff0072"
+                    android:layout_marginLeft="270px"
+                    android:layout_marginTop="50px"
+                    android:lines="1" />
+            </FrameLayout>
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="860px"
+                android:id="@+id/leavefeedback_content_fl"
+                android:tag="fw-sh">
+                <FrameLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="500px"
+                    android:tag="fw-sh"
+                    android:id="@+id/leavefeedback_rate_fl"
+                    android:background="#80ffffff">
+                    <TextView
+                        android:text="How is this App working for you?"
+                        android:layout_width="560px"
+                        android:layout_height="50px"
+                        android:id="@+id/leavefeedback_question_tv"
+                        android:tag="sw-sh-sl-st-sfont-or"
+                        android:gravity="center_vertical"
+                        android:textSize="30px"
+                        android:textColor="#ff555555"
+                        android:lines="1"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="10px" />
+                    <ImageButton
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:tag="01-sw-sh-sl-st"
+                        android:scaleType="centerInside"
+                        android:layout_marginLeft="0px"
+                        android:layout_marginTop="74px"
+                        android:background="@null" />
+                    <ImageButton
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:tag="02-sw-sh-sl-st"
+                        android:scaleType="centerInside"
+                        android:layout_marginLeft="60px"
+                        android:layout_marginTop="74px"
+                        android:background="@null"
+                        android:src="@drawable/star_empty" />
+                    <ImageButton
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:tag="03-sw-sh-sl-st"
+                        android:scaleType="centerInside"
+                        android:layout_marginLeft="166px"
+                        android:layout_marginTop="74px"
+                        android:background="@null"
+                        android:src="@drawable/star_empty" />
+                    <ImageButton
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:tag="04-sw-sh-sl-st"
+                        android:scaleType="centerInside"
+                        android:layout_marginLeft="272px"
+                        android:layout_marginTop="74px"
+                        android:background="@null"
+                        android:src="@drawable/star_empty" />
+                    <ImageButton
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:tag="05-sw-sh-sl-st"
+                        android:scaleType="centerInside"
+                        android:layout_marginLeft="378px"
+                        android:layout_marginTop="74px"
+                        android:background="@null"
+                        android:src="@drawable/star_empty" />
+                    <ImageButton
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:tag="06-sw-sh-sl-st"
+                        android:scaleType="centerInside"
+                        android:layout_marginLeft="484px"
+                        android:layout_marginTop="74px"
+                        android:background="@null"
+                        android:src="@drawable/star_empty" />
+                    <TextView
+                        android:text="Please provide a comment"
+                        android:layout_width="560px"
+                        android:layout_height="50px"
+                        android:id="@+id/leavefeedback_comment_tv"
+                        android:tag="sw-sh-sl-st-sfont-ol"
+                        android:gravity="center_vertical"
+                        android:textSize="30px"
+                        android:textColor="#ff555555"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="140px"
+                        android:lines="1" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:layout_width="600px"
+                        android:layout_height="300px"
+                        android:id="@+id/leavefeedback_comment_et"
+                        android:tag="sw-sh-sl-st-sfont-hnlt"
+                        android:gravity="top"
+                        android:textSize="24px"
+                        android:textColor="#ff555555"
+                        android:layout_marginLeft="0px"
+                        android:layout_marginTop="200px" />
+                </FrameLayout>
+                <FrameLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="600px"
+                    android:layout_height="160px"
+                    android:tag="sw-sh-sl-st"
+                    android:layout_marginTop="520px"
+                    android:background="#66ffffff">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/leavefeedback_picture_iv"
+                        android:tag="fw-fh"
+                        android:scaleType="centerInside" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/leavefeedback_attach_btn"
+                        android:tag="fw-fh-sfont-ol"
+                        android:text="+ ATTACH A PHOTO (IF APPLIES)"
+                        android:textSize="30px"
+                        android:textColor="#ffa0ec0c"
+                        android:background="@null" />
+                </FrameLayout>
+                <Button
+                    android:text="SEND FEEDBACK"
+                    android:layout_width="600px"
+                    android:layout_height="80px"
+                    android:id="@+id/leavefeedback_send_btn"
+                    android:tag="sw-sh-sl-st-sfont-or"
+                    android:textSize="30px"
+                    android:textColor="#ffffffff"
+                    android:background="#ff7aec0c"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="740px" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

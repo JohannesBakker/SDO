@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="600px"
+    android:layout_height="wrap_content"
+    android:tag="sw-wh">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:tag="sw-wh-spt-spb"
+        android:paddingTop="10px"
+        android:paddingBottom="10px">
+        <ImageView
+            android:src="@drawable/radiobtn_empty"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:id="@+id/radioview_radio_iv"
+            android:tag="sw-sh-sl-gcv"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="20px"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:src="@drawable/outlet_default"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:id="@+id/radioview_picture_iv"
+            android:tag="sw-sh-sl-gcv"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="70px"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioview_desc_tv"
+            android:tag="fw-wh-sfont-hnlt-spl-spr-spt-spb-gcv"
+            android:textSize="28px"
+            android:gravity="center_vertical"
+            android:paddingLeft="150px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:paddingRight="10px"
+            android:textColor="#ff555555"
+            android:layout_gravity="center_vertical" />
+    </FrameLayout>
+    <TextView
+        android:background="#ffe6e6e6"
+        android:tag="fw-sh"
+        android:layout_width="match_parent"
+        android:layout_height="2px" />
+</LinearLayout>

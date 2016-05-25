@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:tag="ww-wh">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:tag="sw-wh-spb"
+        android:paddingBottom="10px">
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="600px"
+            android:layout_height="130px"
+            android:tag="sw-sh"
+            android:background="#ffffffff">
+            <ImageView
+                android:src="@drawable/outlet_default"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:id="@+id/planogramcell_outlet_picture_iv"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tag="sw-sh" />
+            <TextView
+                android:text="Outlet"
+                android:layout_width="340px"
+                android:layout_height="50px"
+                android:id="@+id/planogramcell_outlet_name_tv"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="160px"
+                android:layout_marginTop="20px"
+                android:lines="1"
+                android:textColor="#ff505050"
+                android:textSize="30px" />
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/planogramcell_offers_ll"
+            android:tag="fw-wh" />
+    </LinearLayout>
+</LinearLayout>

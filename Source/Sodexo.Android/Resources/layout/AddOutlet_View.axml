@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="460px"
+        android:tag="sw-sh"
+        android:paddingBottom="16px">
+        <ImageView
+            android:src="@drawable/accounts_cell_separate_line"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:tag="fw-sh" />
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="440px"
+            android:tag="fw-sh-st"
+            android:background="#ffffffff"
+            android:layout_marginTop="4px">
+            <TextView
+                android:text="01"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:id="@+id/addoutletview_number_tv"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="60px"
+                android:textColor="#ffaaaaaa"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:gravity="center" />
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="220px"
+                android:layout_height="60px"
+                android:id="@+id/addoutletview_delete_account_fl"
+                android:tag="sw-sh-sl-st"
+                android:layout_marginLeft="340px"
+                android:layout_marginTop="30px"
+                android:background="#fffd1606">
+                <ImageView
+                    android:src="@drawable/icon_delete"
+                    android:layout_width="32px"
+                    android:layout_height="40px"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tag="sw-sh-sl-st"
+                    android:layout_marginTop="10px"
+                    android:layout_marginLeft="10px" />
+                <Button
+                    android:text="DELETE OUTLET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="fw-fh-sfont-or-spl"
+                    android:background="@null"
+                    android:textSize="20px"
+                    android:paddingLeft="40px"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/addoutletview_delete_outlet_btn" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="580px"
+                android:layout_height="2px"
+                android:tag="sw-sh-sl-st"
+                android:background="#ffc5c5c5"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="110px" />
+            <EditText
+                android:layout_width="560px"
+                android:layout_height="60px"
+                android:id="@+id/addoutletview_name_et"
+                android:tag="sw-sh-sl-st-sfont-ol"
+                android:gravity="center_vertical"
+                android:hint="Enter outlet name"
+                android:textSize="34px"
+                android:textColor="#ff555555"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="120px"
+                android:background="@null"
+                android:lines="1" />
+            <TextView
+                android:layout_width="580px"
+                android:layout_height="2px"
+                android:tag="sw-sh-sl-st"
+                android:background="#ffc5c5c5"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="188px" />
+            <Spinner
+                android:layout_width="560px"
+                android:layout_height="60px"
+                android:id="@+id/addoutletview_consumer_sp"
+                android:tag="sw-sh-sl-st"
+                android:spinnerMode="dropdown"
+                android:background="@null"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="196px" />
+            <ImageView
+                android:src="@drawable/icon_bottom_arrow"
+                android:layout_width="12px"
+                android:layout_height="8px"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tag="sw-sh-sl-st"
+                android:layout_marginLeft="500px"
+                android:layout_marginTop="222px" />
+            <ImageButton
+                android:src="@drawable/info_btn_green"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:id="@+id/addoutletview_consumer_info_imgbtn"
+                android:tag="sw-sh-sl-st"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:background="@null"
+                android:layout_marginLeft="540px"
+                android:layout_marginTop="210px" />
+            <TextView
+                android:layout_width="580px"
+                android:layout_height="2px"
+                android:tag="sw-sh-sl-st"
+                android:background="#ffc5c5c5"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="264px" />
+            <Spinner
+                android:layout_width="560px"
+                android:layout_height="60px"
+                android:id="@+id/addoutletview_annualsales_sp"
+                android:tag="sw-sh-sl-st"
+                android:spinnerMode="dropdown"
+                android:background="@null"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="272px" />
+            <ImageView
+                android:src="@drawable/icon_bottom_arrow"
+                android:layout_width="12px"
+                android:layout_height="8px"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tag="sw-sh-sl-st"
+                android:layout_marginLeft="500px"
+                android:layout_marginTop="298px" />
+            <ImageButton
+                android:src="@drawable/info_btn_green"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:id="@+id/addoutletview_annualsales_info_imgbtn"
+                android:tag="sw-sh-sl-st"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:background="@null"
+                android:layout_marginLeft="540px"
+                android:layout_marginTop="286px" />
+            <TextView
+                android:layout_width="580px"
+                android:layout_height="2px"
+                android:tag="sw-sh-sl-st"
+                android:background="#ffc5c5c5"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="340px" />
+            <Spinner
+                android:layout_width="560px"
+                android:layout_height="60px"
+                android:id="@+id/addoutletview_localcompetition_sp"
+                android:tag="sw-sh-sl-st"
+                android:spinnerMode="dropdown"
+                android:background="@null"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="350px" />
+            <ImageView
+                android:src="@drawable/icon_bottom_arrow"
+                android:layout_width="12px"
+                android:layout_height="8px"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tag="sw-sh-sl-st"
+                android:layout_marginLeft="548px"
+                android:layout_marginTop="376px" />
+            <TextView
+                android:layout_width="580px"
+                android:layout_height="2px"
+                android:tag="sw-sh-sl-st"
+                android:background="#ffc5c5c5"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="418px" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

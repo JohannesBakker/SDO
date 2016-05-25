@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:tag="ww-wh">
+    <ImageView
+        android:layout_width="600px"
+        android:id="@+id/promotioncell_picture_iv"
+        android:tag="sw-sh"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:background="#ff0e973a"
+        android:layout_height="100px" />
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:tag="sw-wh-spb"
+        android:paddingBottom="20px">
+        <ImageView
+            android:src="@drawable/promotion_cell_separator"
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:tag="fw-sh"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true" />
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:tag="fw-sh-st"
+            android:layout_marginTop="6px"
+            android:background="#ffffffff">
+            <ImageView
+                android:src="@drawable/accounts_cell_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="fw-fh"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true" />
+            <ImageView
+                android:src="@drawable/outlet_default"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:id="@+id/promotioncell_category_iv"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tag="sw-sh-sl-st"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px" />
+            <TextView
+                android:text="IN MY KITCHEN"
+                android:layout_width="440px"
+                android:layout_height="50px"
+                android:id="@+id/promotioncell_name_tv"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:gravity="center_vertical"
+                android:textSize="34px"
+                android:textColor="#ff555555"
+                android:lines="1"
+                android:layout_marginLeft="130px"
+                android:layout_marginTop="12px" />
+            <TextView
+                android:text="START:07/20/14-FINISH:07/29/14"
+                android:layout_width="440px"
+                android:layout_height="44px"
+                android:id="@+id/promotioncell_date_tv"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="24px"
+                android:textColor="#ff555555"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:layout_marginLeft="130px"
+                android:layout_marginTop="62px" />
+        </FrameLayout>
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/promotioncell_desc_tv"
+            android:tag="fw-wh-spl-spb-spr-spt-sfont-hnlt-st"
+            android:gravity="center_vertical"
+            android:background="#ffffffff"
+            android:textSize="24px"
+            android:textColor="#ff555555"
+            android:layout_marginTop="126px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:paddingRight="20px"
+            android:paddingLeft="130px" />
+        <ImageView
+            android:src="@drawable/img_active"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:id="@+id/promotioncell_status_iv"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:tag="sw-sh-sl-st"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="114px" />
+    </FrameLayout>
+</LinearLayout>

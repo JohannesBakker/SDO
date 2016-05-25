@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:tag="sw-sh"
+        android:layout_width="640px"
+        android:layout_height="1008px">
+        <TextView
+            android:text="GIVE IT TO US STRAIGHT. WE LOVE FEEDBACK"
+            android:layout_width="match_parent"
+            android:layout_height="42px"
+            android:tag="fw-sh-st-sfont-or"
+            android:gravity="center"
+            android:textSize="30px"
+            android:textColor="#ff555555"
+            android:lines="1"
+            android:layout_marginTop="40px" />
+        <TextView
+            android:text="PLANOGRAM"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:tag="sw-sh-sl-st-sfont-ol-spb"
+            android:gravity="center"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="120px"
+            android:paddingBottom="40px"
+            android:background="#b2ffffff"
+            android:textSize="32px"
+            android:textColor="#ff555555" />
+        <ImageView
+            android:src="@drawable/icon_right_arrow"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:tag="01-sw-sh-sl-st"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="120px"
+            android:paddingTop="60px"
+            android:id="@+id/feedback_planogram_iv" />
+        <TextView
+            android:text="PROMOTIONS"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:tag="sw-sh-sl-st-sfont-ol-spb"
+            android:gravity="center"
+            android:layout_marginLeft="320px"
+            android:layout_marginTop="120px"
+            android:paddingBottom="40px"
+            android:background="#b2ffffff"
+            android:textSize="32px"
+            android:textColor="#ff555555" />
+        <ImageView
+            android:src="@drawable/icon_right_arrow"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:tag="02-sw-sh-sl-st"
+            android:layout_marginLeft="320px"
+            android:layout_marginTop="120px"
+            android:paddingTop="60px"
+            android:id="@+id/feedback_promotions_iv" />
+        <TextView
+            android:text="APP RELATED"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:tag="sw-sh-sl-st-sfont-ol-spb"
+            android:gravity="center"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="402px"
+            android:paddingBottom="40px"
+            android:background="#b2ffffff"
+            android:textSize="32px"
+            android:textColor="#ff555555" />
+        <ImageView
+            android:src="@drawable/icon_right_arrow"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:tag="03-sw-sh-sl-st"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="402px"
+            android:paddingTop="60px"
+            android:id="@+id/feedback_apprelated_iv" />
+        <TextView
+            android:text="PRICING"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:tag="sw-sh-sl-st-sfont-ol-spb"
+            android:gravity="center"
+            android:layout_marginLeft="320px"
+            android:layout_marginTop="402px"
+            android:paddingBottom="40px"
+            android:background="#b2ffffff"
+            android:textSize="32px"
+            android:textColor="#ff555555" />
+        <ImageView
+            android:src="@drawable/icon_right_arrow"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:tag="04-sw-sh-sl-st"
+            android:layout_marginLeft="320px"
+            android:layout_marginTop="402px"
+            android:paddingTop="60px"
+            android:id="@+id/feedback_pricing_iv" />
+        <TextView
+            android:text="MINDFUL"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:tag="sw-sh-sl-st-sfont-ol-spb"
+            android:gravity="center"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="684px"
+            android:paddingBottom="40px"
+            android:background="#b2ffffff"
+            android:textSize="32px"
+            android:textColor="#ff555555" />
+        <ImageView
+            android:src="@drawable/icon_right_arrow"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:tag="05-sw-sh-sl-st"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="684px"
+            android:paddingTop="60px"
+            android:id="@+id/feedback_mindful_iv" />
+        <TextView
+            android:text="IN MY KITCHEN"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:tag="sw-sh-sl-st-sfont-ol-spb"
+            android:gravity="center"
+            android:layout_marginLeft="320px"
+            android:layout_marginTop="684px"
+            android:paddingBottom="40px"
+            android:background="#b2ffffff"
+            android:textSize="32px"
+            android:textColor="#ff555555" />
+        <ImageView
+            android:src="@drawable/icon_right_arrow"
+            android:layout_width="278px"
+            android:layout_height="280px"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:tag="06-sw-sh-sl-st"
+            android:layout_marginLeft="320px"
+            android:layout_marginTop="684px"
+            android:paddingTop="60px"
+            android:id="@+id/feedback_kitchen_iv" />
+    </FrameLayout>
+</LinearLayout>

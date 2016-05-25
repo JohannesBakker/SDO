@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="600px"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:tag="sw-wh">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:tag="sw-wh"
+        android:background="#fff9f9f9">
+        <TextView
+            android:text="Question"
+            android:layout_width="560px"
+            android:layout_height="wrap_content"
+            android:id="@+id/decision_question_tv"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:tag="sw-wh-sl-st-or-sfont"
+            android:textSize="30px"
+            android:textColor="#ff555555"
+            android:gravity="center" />
+        <TextView
+            android:background="#ffe6e6e6"
+            android:tag="fw-sh-st"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="20px" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/decision_answers_ll"
+            android:tag="fw-wh" />
+    </LinearLayout>
+</LinearLayout>

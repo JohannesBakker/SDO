@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.sodexonet.noram.retailrangeripad</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.3</string>
+	<key>CFBundleVersion</key>
+	<string>1.4</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryboard</string>
+	<key>MinimumOSVersion</key>
+	<string>7.0</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/Karla-Bold.ttf</string>
+		<string>Fonts/Karla-Italic.ttf</string>
+		<string>Fonts/Karla-Regular.ttf</string>
+		<string>Fonts/Oswald-Regular.ttf</string>
+		<string>Fonts/Oswald-Light.ttf</string>
+		<string>Fonts/Oswald-Bold.ttf</string>
+	</array>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon-72</string>
+		<string>Icon-72@2x</string>
+		<string>Icon-76</string>
+		<string>Icon-76@2x</string>
+		<string>Icon-Small-50</string>
+		<string>Icon-Small-50@2x</string>
+		<string>Icon-Small-40</string>
+		<string>Icon-Small-40@2x</string>
+		<string>Icon-Small</string>
+		<string>Icon-Small@2x</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>MainStoryboard</string>
+	<key>CFBundleDisplayName</key>
+	<string>ITZ Pro</string>
+</dict>
+</plist>

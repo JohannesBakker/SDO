@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="928px"
+        android:id="@+id/pricesresult_listview"
+        android:tag="sw-sh-spl-spr-spt-spb-sb"
+        android:paddingTop="20px"
+        android:paddingRight="20px"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px"
+        android:layout_marginBottom="100px" />
+    <TextView
+        android:text="No results found. Please try again using different search criteria."
+        android:layout_width="560px"
+        android:layout_height="100px"
+        android:id="@+id/pricesresult_nothing_tv"
+        android:tag="sw-sh-sl-gcv-sfont-hnlt"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="40px"
+        android:gravity="center_vertical"
+        android:textSize="34px"
+        android:textColor="#ff555555" />
+    <TextView
+        android:text="For optimum pricing for your account please refer to the In the Zone local pricing calculator available on SodexoNet."
+        android:layout_width="600px"
+        android:layout_height="80px"
+        android:tag="sw-sh-spl-sl-spr-sfont-hnlt-gb"
+        android:gravity="center_vertical"
+        android:textSize="20px"
+        android:textColor="#ff555555"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:layout_marginLeft="20px"
+        android:background="#ffffffff"
+        android:layout_gravity="bottom" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="wrap_content"
+        android:id="@+id/pricesresult_filter_ll"
+        android:tag="sw-wh-st"
+        android:background="#fff5f5f5"
+        android:layout_marginTop="0px">
+        <TextView
+            android:text="Filter your results"
+            android:layout_width="400px"
+            android:layout_height="42px"
+            android:tag="sw-sh-sl-st-sfont-ol-hnlt"
+            android:textSize="30px"
+            android:textColor="#ff555555"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="20px" />
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="640px"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricesresult_filter_categories_fl"
+            android:tag="sw-wh-st-sb"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px" />
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:id="@+id/pricesresult_filter_search_fl"
+            android:tag="fw-sh">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:tag="fw-sh-st"
+                android:background="#ffc8c7cc"
+                android:layout_marginTop="0px" />
+            <EditText
+                android:layout_width="600px"
+                android:layout_height="60px"
+                android:id="@+id/pricesresult_filter_search_et"
+                android:tag="sw-sh-sl-st-sfont-ol"
+                android:hint="Enter search item"
+                android:gravity="center_vertical"
+                android:textSize="30px"
+                android:textColor="#ff555555"
+                android:background="@null"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:tag="fw-sh-st"
+                android:background="#ffc8c7cc"
+                android:layout_marginTop="90px" />
+            <Button
+                android:text="APPLY"
+                android:layout_width="300px"
+                android:layout_height="60px"
+                android:id="@+id/pricesresult_filter_apply_btn"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="30px"
+                android:textColor="#ffffffff"
+                android:background="#ff7aec0c"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="114px" />
+            <Button
+                android:text="CLEAR"
+                android:layout_width="300px"
+                android:layout_height="60px"
+                android:id="@+id/pricesresult_filter_cancel_btn"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="30px"
+                android:textColor="#ffffffff"
+                android:background="#ffdbdbdb"
+                android:layout_marginLeft="320px"
+                android:layout_marginTop="114px" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

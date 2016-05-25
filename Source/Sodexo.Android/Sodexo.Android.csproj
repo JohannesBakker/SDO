@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{41333EDB-5DB7-427B-8764-1675DF92FFB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sodexo.Android</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Sodexo.Android</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <MonoDroidExtraArgs>
+    </MonoDroidExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>..\Components\xamarin.auth-1.2.2\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Sodexo.RetailActivation.Portable">
+      <HintPath>..\PCL\Sodexo.RetailActivation.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\Components\modernhttpclient-2.0.1\lib\android\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="HockeyApp.Android">
+      <HintPath>..\Components\hockeyappandroid-3.0.2\lib\android\HockeyApp.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="OkHttp">
+      <HintPath>..\Components\modernhttpclient-2.0.1\lib\android\OkHttp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
+    <Compile Include="Custom\Common.cs" />
+    <Compile Include="Custom\FedAuthWebRedirectAuthenticator.cs" />
+    <Compile Include="Activities\BaseActivity.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Custom\LayoutAdjuster.cs" />
+    <Compile Include="App\SodexoApp.cs" />
+    <Compile Include="Fragments\Dashboard\SDXDashboardFragment.cs" />
+    <Compile Include="Fragments\Accounts\SDXAccountsFragment.cs" />
+    <Compile Include="Custom\SDXBaseFragment.cs" />
+    <Compile Include="Custom\SDXGlobalLayoutListener.cs" />
+    <Compile Include="ListAdapters\Accounts\SDXAccountsListAdapter.cs" />
+    <Compile Include="ListAdapters\Dashboard\SDXDashboardListAdapter.cs" />
+    <Compile Include="Views\SDXOutletView.cs" />
+    <Compile Include="Fragments\Accounts\SDXLookupAccountFragment.cs" />
+    <Compile Include="Custom\SlidingLinearLayout.cs" />
+    <Compile Include="Fragments\Accounts\SDXAddOutletFragment.cs" />
+    <Compile Include="Fragments\Accounts\SDXAccountDetailFragment.cs" />
+    <Compile Include="Views\SDXAddOutletView.cs" />
+    <Compile Include="Views\SDXOfferView.cs" />
+    <Compile Include="ListAdapters\Accounts\SDXOutletsListAdapter.cs" />
+    <Compile Include="Views\SDXOutletDetailCell.cs" />
+    <Compile Include="Views\SDXAccountView.cs" />
+    <Compile Include="Views\SDXOfferCategoryView.cs" />
+    <Compile Include="Fragments\Me\SDXMeFragment.cs" />
+    <Compile Include="Fragments\Prices\SDXPricesFragment.cs" />
+    <Compile Include="Fragments\Prices\SDXPricesResultFragment.cs" />
+    <Compile Include="Views\SDXPricesResultCell.cs" />
+    <Compile Include="ListAdapters\Prices\SDXPricesResultListAdapter.cs" />
+    <Compile Include="Fragments\Promotions\SDXPromotionsFragment.cs" />
+    <Compile Include="Fragments\Feedback\SDXFeedbackFragment.cs" />
+    <Compile Include="ListAdapters\Promotion\SDXPromotionListAdapter.cs" />
+    <Compile Include="Views\SDXPromotionCell.cs" />
+    <Compile Include="Views\SDXPromotionCategoryView.cs" />
+    <Compile Include="Fragments\Promotions\SDXPromotionDetailFragment.cs" />
+    <Compile Include="Fragments\Feedback\LeaveFeedbackFragment.cs" />
+    <Compile Include="Fragments\Feedback\SDXPlanogramsFragment.cs" />
+    <Compile Include="ListAdapters\Planogram\SDXPlanogramsListAdapter.cs" />
+    <Compile Include="Views\SDXPlanogramCell.cs" />
+    <Compile Include="Fragments\Accounts\SDXOfferDetailFragment.cs" />
+    <Compile Include="Fragments\Accounts\SDXSelectPlanogramFragment.cs" />
+    <Compile Include="Views\SDXDecisionView.cs" />
+    <Compile Include="Views\SDXDecisionRadioView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\drawable\accounts_btn_next.png" />
+    <AndroidResource Include="Resources\drawable\accounts_cell_info_bg.png" />
+    <AndroidResource Include="Resources\drawable\accounts_cell_separate_line.png" />
+    <AndroidResource Include="Resources\drawable\accounts_header_bg.png" />
+    <AndroidResource Include="Resources\drawable\addoffer_bg.png" />
+    <AndroidResource Include="Resources\drawable\background.png" />
+    <AndroidResource Include="Resources\drawable\btn_delete.png" />
+    <AndroidResource Include="Resources\drawable\btn_edit.png" />
+    <AndroidResource Include="Resources\drawable\btn_info.png" />
+    <AndroidResource Include="Resources\drawable\dashboard_header_bg.png" />
+    <AndroidResource Include="Resources\drawable\feedback_header_bg.png" />
+    <AndroidResource Include="Resources\drawable\icon_add.png" />
+    <AndroidResource Include="Resources\drawable\icon_back.png" />
+    <AndroidResource Include="Resources\drawable\icon_basic.png" />
+    <AndroidResource Include="Resources\drawable\icon_bottom_arrow.png" />
+    <AndroidResource Include="Resources\drawable\icon_delete.png" />
+    <AndroidResource Include="Resources\drawable\icon_female.png" />
+    <AndroidResource Include="Resources\drawable\icon_filter.png" />
+    <AndroidResource Include="Resources\drawable\icon_info.png" />
+    <AndroidResource Include="Resources\drawable\icon_lock.png" />
+    <AndroidResource Include="Resources\drawable\icon_m.png" />
+    <AndroidResource Include="Resources\drawable\icon_menu.png" />
+    <AndroidResource Include="Resources\drawable\icon_plus.png" />
+    <AndroidResource Include="Resources\drawable\icon_right_arrow.png" />
+    <AndroidResource Include="Resources\drawable\icon_search.png" />
+    <AndroidResource Include="Resources\drawable\img_active.png" />
+    <AndroidResource Include="Resources\drawable\img_add.png" />
+    <AndroidResource Include="Resources\drawable\img_cold_beverage_dispensed.png" />
+    <AndroidResource Include="Resources\drawable\img_inactive.png" />
+    <AndroidResource Include="Resources\drawable\img_logout.png" />
+    <AndroidResource Include="Resources\drawable\img_profile.png" />
+    <AndroidResource Include="Resources\drawable\indicator_accountsetup.png" />
+    <AndroidResource Include="Resources\drawable\indicator_generalinfo.png" />
+    <AndroidResource Include="Resources\drawable\indicator_planogram.png" />
+    <AndroidResource Include="Resources\drawable\indicator_promotion.png" />
+    <AndroidResource Include="Resources\drawable\indicator_surveyorfeedback.png" />
+    <AndroidResource Include="Resources\drawable\indicator_usersetup.png" />
+    <AndroidResource Include="Resources\drawable\info_btn_green.png" />
+    <AndroidResource Include="Resources\drawable\line_dots.png" />
+    <AndroidResource Include="Resources\drawable\line_solid_light_gray.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\me_header_bg.png" />
+    <AndroidResource Include="Resources\drawable\menu_accounts_off.png" />
+    <AndroidResource Include="Resources\drawable\menu_accounts_on.png" />
+    <AndroidResource Include="Resources\drawable\menu_dashboard_off.png" />
+    <AndroidResource Include="Resources\drawable\menu_dashboard_on.png" />
+    <AndroidResource Include="Resources\drawable\menu_feedback_off.png" />
+    <AndroidResource Include="Resources\drawable\menu_feedback_on.png" />
+    <AndroidResource Include="Resources\drawable\menu_logo_off.png" />
+    <AndroidResource Include="Resources\drawable\menu_logo_on.png" />
+    <AndroidResource Include="Resources\drawable\menu_me_off.png" />
+    <AndroidResource Include="Resources\drawable\menu_me_on.png" />
+    <AndroidResource Include="Resources\drawable\menu_prices_off.png" />
+    <AndroidResource Include="Resources\drawable\menu_prices_on.png" />
+    <AndroidResource Include="Resources\drawable\menu_promotions_off.png" />
+    <AndroidResource Include="Resources\drawable\menu_promotions_on.png" />
+    <AndroidResource Include="Resources\drawable\outlet_default.png" />
+    <AndroidResource Include="Resources\drawable\prices_header_bg.png" />
+    <AndroidResource Include="Resources\drawable\progress_empty.png" />
+    <AndroidResource Include="Resources\drawable\progress_full.png" />
+    <AndroidResource Include="Resources\drawable\progress_text_bg.png" />
+    <AndroidResource Include="Resources\drawable\promotion_all.png" />
+    <AndroidResource Include="Resources\drawable\promotion_cell_separator.png" />
+    <AndroidResource Include="Resources\drawable\promotion_cold_beverage.png" />
+    <AndroidResource Include="Resources\drawable\promotion_hot_beverages.png" />
+    <AndroidResource Include="Resources\drawable\promotion_in_my_kitchen.png" />
+    <AndroidResource Include="Resources\drawable\promotion_mindful.png" />
+    <AndroidResource Include="Resources\drawable\promotion_mutualized.png" />
+    <AndroidResource Include="Resources\drawable\promotion_pricing.png" />
+    <AndroidResource Include="Resources\drawable\promotion_simply_to_go.png" />
+    <AndroidResource Include="Resources\drawable\promotions_header_bg.png" />
+    <AndroidResource Include="Resources\drawable\radiobtn_empty.png" />
+    <AndroidResource Include="Resources\drawable\radiobtn_full.png" />
+    <AndroidResource Include="Resources\drawable\star_empty.png" />
+    <AndroidResource Include="Resources\drawable\star_full.png" />
+    <AndroidResource Include="Resources\drawable\symbol_accountsetup.png" />
+    <AndroidResource Include="Resources\drawable\symbol_generalinfo.png" />
+    <AndroidResource Include="Resources\drawable\symbol_planogram.png" />
+    <AndroidResource Include="Resources\drawable\symbol_promotion.png" />
+    <AndroidResource Include="Resources\drawable\symbol_surveyorfeedback.png" />
+    <AndroidResource Include="Resources\drawable\symbol_usersetup.png" />
+    <AndroidResource Include="Resources\drawable\temp_offer_added.png" />
+    <AndroidResource Include="Resources\drawable\temp_offer.png" />
+    <AndroidResource Include="Resources\drawable\temp_planogram.png" />
+    <AndroidResource Include="Resources\drawable\text_no_planogram.png" />
+    <AndroidResource Include="Resources\drawable\text_with_planogram.png" />
+    <AndroidResource Include="Resources\layout\Dashboard_Cell.axml" />
+    <AndroidResource Include="Resources\layout\Dashboard.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\anim\Anim_Fade_In.xml" />
+    <AndroidResource Include="Resources\anim\Anim_Fade_Out.xml" />
+    <AndroidResource Include="Resources\anim\Slide_In_Left.xml" />
+    <AndroidResource Include="Resources\anim\Slide_In_Right.xml" />
+    <AndroidResource Include="Resources\anim\Slide_Out_Left.xml" />
+    <AndroidResource Include="Resources\anim\Slide_Out_Right.xml" />
+    <AndroidResource Include="Resources\layout\Accounts.axml" />
+    <AndroidResource Include="Resources\layout\Accounts_Cell.axml" />
+    <AndroidResource Include="Resources\layout\Outlet_View.axml" />
+    <AndroidResource Include="Resources\drawable\img_offer_categories_1.png" />
+    <AndroidResource Include="Resources\drawable\img_offer_categories_2.png" />
+    <AndroidResource Include="Resources\drawable\img_offer_categories_3.png" />
+    <AndroidResource Include="Resources\drawable\img_offer_categories_4.png" />
+    <AndroidResource Include="Resources\drawable\img_offer_categories_5.png" />
+    <AndroidResource Include="Resources\drawable\img_offer_categories_6.png" />
+    <AndroidResource Include="Resources\layout\LookupAccount.axml" />
+    <AndroidResource Include="Resources\layout\AddOutlet.axml" />
+    <AndroidResource Include="Resources\layout\AccountDetail.axml" />
+    <AndroidResource Include="Resources\layout\AddOutlet_View.axml" />
+    <AndroidResource Include="Resources\layout\OutletDetail_Cell.axml" />
+    <AndroidResource Include="Resources\layout\Account_View.axml" />
+    <AndroidResource Include="Resources\layout\Offer_View.axml" />
+    <AndroidResource Include="Resources\layout\OfferCategoryView.axml" />
+    <AndroidResource Include="Resources\layout\Me.axml" />
+    <AndroidResource Include="Resources\drawable\edittext_bg.png" />
+    <AndroidResource Include="Resources\drawable\spinner_bg.png" />
+    <AndroidResource Include="Resources\layout\Prices.axml" />
+    <AndroidResource Include="Resources\layout\PricesResult.axml" />
+    <AndroidResource Include="Resources\layout\PricesResultCell.axml" />
+    <AndroidResource Include="Resources\layout\Promotions.axml" />
+    <AndroidResource Include="Resources\layout\Feedback.axml" />
+    <AndroidResource Include="Resources\layout\PromotionCell.axml" />
+    <AndroidResource Include="Resources\layout\PromotionCategoryView.axml" />
+    <AndroidResource Include="Resources\layout\PromotionDetail.axml" />
+    <AndroidResource Include="Resources\layout\LeaveFeedback.axml" />
+    <AndroidResource Include="Resources\layout\Planograms.axml" />
+    <AndroidResource Include="Resources\layout\PlanogramCell.axml" />
+    <AndroidResource Include="Resources\layout\OfferDetail.axml" />
+    <AndroidResource Include="Resources\layout\SelectPlanogram.axml" />
+    <AndroidResource Include="Resources\layout\DecisionView.axml" />
+    <AndroidResource Include="Resources\layout\DecisionTreeRadioView.axml" />
+  </ItemGroup>
+  <Import Project="..\Sodexo.Core\Sodexo.Core.projitems" Label="Shared" Condition="Exists('..\Sodexo.Core\Sodexo.Core.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <XamarinComponentReference Include="xamarin.auth">
+      <Version>1.2.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="hockeyappandroid">
+      <Version>3.0.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="modernhttpclient">
+      <Version>2.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\HelveticaNeueLTStd-Lt.otf" />
+    <AndroidAsset Include="Assets\Fonts\Karla-Bold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Karla-Regular.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Oswald-Light.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Oswald-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activities\" />
+    <Folder Include="Custom\" />
+    <Folder Include="Fragments\" />
+    <Folder Include="ListAdapters\" />
+    <Folder Include="App\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="Fragments\Accounts\" />
+    <Folder Include="Fragments\Dashboard\" />
+    <Folder Include="Assets\Fonts\" />
+    <Folder Include="ListAdapters\Dashboard\" />
+    <Folder Include="ListAdapters\Accounts\" />
+    <Folder Include="Views\" />
+    <Folder Include="Fragments\Me\" />
+    <Folder Include="Fragments\Prices\" />
+    <Folder Include="ListAdapters\Prices\" />
+    <Folder Include="Fragments\Promotions\" />
+    <Folder Include="Fragments\Feedback\" />
+    <Folder Include="ListAdapters\Promotion\" />
+    <Folder Include="ListAdapters\Planogram\" />
+  </ItemGroup>
+</Project>

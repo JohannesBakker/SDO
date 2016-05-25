@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:tag="ww-wh">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="100px"
+        android:tag="sw-sh"
+        android:background="#ffffffff">
+        <ImageView
+            android:src="@drawable/line_dots"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:tag="fw-sh" />
+        <ImageView
+            android:src="@drawable/temp_offer"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:id="@+id/offerview_picture_iv"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:tag="sw-sh-sl-st"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20px" />
+        <TextView
+            android:text="Cold Beverage Main Vault"
+            android:layout_width="440px"
+            android:layout_height="42px"
+            android:id="@+id/offerview_name_tv"
+            android:tag="sw-sh-sl-st-sfont-or"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textSize="30px"
+            android:textColor="#ff505050"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="14px" />
+        <TextView
+            android:text="PLANOGRAM:"
+            android:layout_width="160px"
+            android:layout_height="42px"
+            android:tag="sw-sh-sl-st-sfont-ol"
+            android:gravity="center_vertical"
+            android:textSize="26px"
+            android:textColor="#ff505050"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="50px"
+            android:lines="1" />
+        <TextView
+            android:text="NOT SELECTED"
+            android:layout_width="260px"
+            android:layout_height="42px"
+            android:id="@+id/offerview_status_tv"
+            android:tag="sw-sh-sl-st-sfont-or"
+            android:gravity="center_vertical"
+            android:textSize="26px"
+            android:textColor="#ffff0072"
+            android:layout_marginLeft="270px"
+            android:layout_marginTop="50px"
+            android:lines="1" />
+        <ImageView
+            android:src="@drawable/icon_right_arrow"
+            android:layout_width="8px"
+            android:layout_height="12px"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:tag="sw-sh-sl-st"
+            android:layout_marginLeft="570px"
+            android:layout_marginTop="48px" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/offerview_navigate_btn"
+            android:tag="fw-fh"
+            android:background="@null" />
+    </FrameLayout>
+</LinearLayout>

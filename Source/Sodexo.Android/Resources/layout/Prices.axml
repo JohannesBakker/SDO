@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="1008px"
+        android:tag="sw-sh"
+        android:id="@+id/prices_scrollview">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="fw-fh-spl-spr"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:id="@+id/prices_container_ll">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prices_advanced_ll"
+                android:tag="fw-wh"
+                android:visibility="visible">
+                <TextView
+                    android:text="Advanced Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="36px"
+                    android:textColor="#ff555555"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20px" />
+                <TextView
+                    android:text="SEARCH"
+                    android:layout_width="match_parent"
+                    android:layout_height="42px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="28px"
+                    android:textColor="#ff555555"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10px" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:id="@+id/prices_keyword_et"
+                    android:tag="fw-sh-sfont-ol-spl-spr-st"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:background="@drawable/edittext_bg"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:lines="1"
+                    android:layout_marginTop="5px"
+                    android:singleLine="true" />
+                <TextView
+                    android:text="SELECT STATE"
+                    android:layout_width="match_parent"
+                    android:layout_height="42px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="28px"
+                    android:textColor="#ff555555"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10px" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:id="@+id/prices_state_sp"
+                    android:tag="fw-sh-st-spl"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginTop="5px"
+                    android:paddingLeft="10px" />
+                <TextView
+                    android:text="SELECT BUSINESS SEGMENT"
+                    android:layout_width="match_parent"
+                    android:layout_height="42px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="28px"
+                    android:textColor="#ff555555"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10px" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:id="@+id/prices_business_segment_sp"
+                    android:tag="fw-sh-st-spl"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginTop="5px"
+                    android:paddingLeft="10px" />
+                <TextView
+                    android:text="SELECT CONSUMER TYPE"
+                    android:layout_width="match_parent"
+                    android:layout_height="42px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="28px"
+                    android:textColor="#ff555555"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10px" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:id="@+id/prices_consumer_type_sp"
+                    android:tag="fw-sh-st-spl"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginTop="5px"
+                    android:paddingLeft="10px" />
+                <TextView
+                    android:text="SELECT LOCAL COMPETITION"
+                    android:layout_width="match_parent"
+                    android:layout_height="42px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="28px"
+                    android:textColor="#ff555555"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10px" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:id="@+id/prices_local_competition_sp"
+                    android:tag="fw-sh-st-spl"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginTop="5px"
+                    android:paddingLeft="10px" />
+                <Button
+                    android:text="SEARCH"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:id="@+id/prices_search_btn"
+                    android:tag="fw-sh-sfont-or-st-sb"
+                    android:textSize="30px"
+                    android:textColor="#ffffffff"
+                    android:background="#ff7aec0c"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prices_basic_ll"
+                android:tag="fw-wh"
+                android:visibility="visible">
+                <TextView
+                    android:text="Enter product, then select outlet to determine correct price."
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="34px"
+                    android:textColor="#ff555555"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10px" />
+                <TextView
+                    android:text="(Dr. Pepper, Sun Chips etc.)"
+                    android:layout_width="match_parent"
+                    android:layout_height="42px"
+                    android:tag="fw-sh-sfont-ol-st"
+                    android:textSize="30px"
+                    android:textColor="#ff969696"
+                    android:layout_marginTop="5px" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:id="@+id/prices_basic_keyword_et"
+                    android:tag="fw-sh-sfont-ol-spl-spr-st"
+                    android:gravity="center_vertical"
+                    android:textSize="30px"
+                    android:textColor="#ff555555"
+                    android:background="@drawable/edittext_bg"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:lines="1"
+                    android:layout_marginTop="5px" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prices_outlets_ll"
+                    android:tag="fw-wh-st-spb"
+                    android:layout_marginTop="5px"
+                    android:paddingBottom="20px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

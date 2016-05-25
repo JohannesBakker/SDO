@@ -1,0 +1,33 @@
+# Version: 7.2.6.28 (606f31a)
+# [first argument, ignore] # /Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/bin/iPhone/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	"/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/obj/iPhone/Debug/mtouch-cache" \
+	--nomanifest \
+	--nosign \
+	-dev \
+	"/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/bin/iPhone/Debug/HttpClient.app" \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.Linq.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Net.Http.dll \
+	-r \
+	"/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/lib/ios/ModernHttpClient.dll" \
+	-debug \
+	-linksdkonly \
+	-sdk \
+	7.1 \
+	-targetver \
+	7.0 \
+	--abi=armv7 \
+	"/Users/njackson2/Projects/Sodexo/Retail Activation App/Components/modernhttpclient-2.0.1/samples/HttpClient.iOS/bin/iPhone/Debug/HttpClient.exe" \

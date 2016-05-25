@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="ww-wh">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:tag="sw-wh">
+        <ImageView
+            android:src="@drawable/accounts_cell_separate_line"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:tag="fw-sh" />
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_height="160px"
+            android:layout_width="match_parent"
+            android:tag="fw-sh">
+            <ImageView
+                android:src="@drawable/accounts_cell_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="fw-fh"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true" />
+            <TextView
+                android:text="BIG SHOPPING MALL"
+                android:layout_width="460px"
+                android:layout_height="50px"
+                android:id="@+id/accountview_name_tv"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:gravity="center_vertical"
+                android:textSize="34px"
+                android:textColor="#ff505050"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="20px"
+                android:lines="1" />
+            <TextView
+                android:text="NEW YROK 4TH AVENUE, 76"
+                android:layout_width="460px"
+                android:layout_height="50px"
+                android:id="@+id/accountview_address_tv"
+                android:tag="sw-sh-sl-st-sfont-ol"
+                android:gravity="center_vertical"
+                android:textSize="30px"
+                android:textColor="#ff505050"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="60px"
+                android:lines="1" />
+            <TextView
+                android:text="20045001"
+                android:layout_width="460px"
+                android:layout_height="40px"
+                android:id="@+id/accountview_locationid_tv"
+                android:tag="sw-sh-sl-st-sfont-kr"
+                android:gravity="center_vertical"
+                android:textSize="25px"
+                android:textColor="#ffa0ef68"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="100px"
+                android:lines="1" />
+            <ImageButton
+                android:src="@drawable/btn_edit"
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:id="@+id/accountview_edit_btn"
+                android:tag="sw-sh-sl-st"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:background="@null"
+                android:layout_marginLeft="530px"
+                android:layout_marginTop="58px" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

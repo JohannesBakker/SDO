@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="1008px"
+        android:tag="sw-sh">
+        <ImageView
+            android:layout_width="640px"
+            android:layout_height="754px"
+            android:id="@+id/me_avatar_iv"
+            android:tag="sw-sh"
+            android:src="@drawable/outlet_default"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:tag="fw-sh-st"
+            android:layout_marginTop="574px"
+            android:background="#66000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:id="@+id/me_name_tv"
+                android:tag="fw-sh-sfont-or"
+                android:textSize="40px"
+                android:textColor="#ffffffff"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:id="@+id/me_title_tv"
+                android:textSize="34px"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:tag="fw-sh-sfont-ol" />
+        </LinearLayout>
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="600px"
+            android:layout_height="100px"
+            android:tag="sw-sh-sl-st"
+            android:background="#ffffffff"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="780px">
+            <ImageView
+                android:src="@drawable/img_profile"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:tag="sw-sh-sl"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:layout_marginLeft="20px" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="fw-fh-sfont-ol-sl"
+                android:text="Upload Profile Picture"
+                android:textSize="36px"
+                android:textColor="#ffaaaaaa"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="120px" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/me_upload_btn"
+                android:tag="fw-fh"
+                android:background="@null" />
+        </FrameLayout>
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="600px"
+            android:layout_height="100px"
+            android:tag="sw-sh-sl-st"
+            android:background="#ffffffff"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="882px">
+            <ImageView
+                android:src="@drawable/img_logout"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:tag="sw-sh-sl"
+                android:layout_marginLeft="20px" />
+            <TextView
+                android:text="Logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="fw-fh-sl-sfont-ol"
+                android:gravity="center_vertical"
+                android:textSize="36px"
+                android:textColor="#ffaaaaaa"
+                android:layout_marginLeft="120px" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/me_logout_btn"
+                android:background="@null"
+                android:tag="fw-fh" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

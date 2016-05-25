@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/main_view"
+    style="@android:style/Theme.NoTitleBar"
+    android:tag="ww-wh">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="88px"
+        android:id="@+id/main_header_fl"
+        android:tag="sw-sh-glt">
+        <ImageView
+            android:src="@drawable/dashboard_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_header_iv"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:tag="fw-fh-glt"
+            android:layout_gravity="left|top" />
+        <ImageButton
+            android:src="@drawable/icon_menu"
+            android:id="@+id/main_header_menu_btn"
+            android:background="@null"
+            android:scaleType="center"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:tag="sw-fh-spl"
+            android:paddingLeft="10px"
+            android:onClick="MenuBtn_OnClick" />
+        <ImageButton
+            android:src="@drawable/icon_back"
+            android:id="@+id/main_header_back_btn"
+            android:background="@null"
+            android:scaleType="center"
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:tag="sw-fh-sl-spr"
+            android:layout_marginLeft="80px"
+            android:paddingRight="10px"
+            android:onClick="BackBtn_OnClick" />
+        <TextView
+            android:text="Dashboard"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="320px"
+            android:layout_height="match_parent"
+            android:id="@+id/main_header_title_tv"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="normal"
+            android:textStyle="normal"
+            android:tag="sw-fh-gc"
+            android:lines="2"
+            android:shadowColor="#dc9c9c9c"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="320px"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:tag="sw-fh-gr"
+            android:gravity="right">
+            <ImageButton
+                android:src="@drawable/icon_basic"
+                android:id="@+id/main_header_change_btn"
+                android:background="@null"
+                android:scaleType="center"
+                android:tag="sw-fh"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:layout_width="80px"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:src="@drawable/icon_add"
+                android:id="@+id/main_header_add_btn"
+                android:background="@null"
+                android:scaleType="center"
+                android:tag="sw-fh"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:layout_width="80px"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:src="@drawable/icon_filter"
+                android:id="@+id/main_header_filter_btn"
+                android:background="@null"
+                android:scaleType="center"
+                android:tag="sw-fh-spl"
+                android:paddingLeft="10px"
+                android:layout_width="80px"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:src="@drawable/icon_info"
+                android:id="@+id/main_header_info_btn"
+                android:background="@null"
+                android:scaleType="center"
+                android:tag="sw-fh-spr"
+                android:paddingRight="10px"
+                android:layout_width="80px"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="640px"
+        android:layout_height="1008px"
+        android:id="@+id/main_content_fl"
+        android:layout_marginTop="88px"
+        android:tag="sw-sh-st" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="152px"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_menu_ll"
+        android:layout_marginTop="88px"
+        android:layout_gravity="left|top"
+        android:tag="sw-wh-glt-st">
+        <Button
+            android:layout_width="152px"
+            android:layout_height="152px"
+            android:id="@+id/main_menu_dashboard_btn"
+            android:background="@drawable/menu_dashboard_on"
+            android:tag="0sw-sh-glt"
+            android:onClick="MenuItem_OnClick" />
+        <Button
+            android:layout_width="152px"
+            android:layout_height="152px"
+            android:id="@+id/main_menu_accounts_btn"
+            android:background="@drawable/menu_accounts_off"
+            android:tag="1sw-sh-glt"
+            android:longClickable="false"
+            android:onClick="MenuItem_OnClick" />
+        <Button
+            android:layout_width="152px"
+            android:layout_height="152px"
+            android:id="@+id/main_menu_promotions_btn"
+            android:background="@drawable/menu_promotions_off"
+            android:tag="2sw-sh-glt"
+            android:longClickable="false"
+            android:onClick="MenuItem_OnClick" />
+        <Button
+            android:layout_width="152px"
+            android:layout_height="152px"
+            android:id="@+id/main_menu_feedback_btn"
+            android:background="@drawable/menu_feedback_off"
+            android:tag="3sw-sh-glt"
+            android:longClickable="false"
+            android:onClick="MenuItem_OnClick" />
+        <Button
+            android:layout_width="152px"
+            android:layout_height="152px"
+            android:id="@+id/main_menu_prices_btn"
+            android:background="@drawable/menu_prices_off"
+            android:tag="4sw-sh-glt"
+            android:longClickable="false"
+            android:onClick="MenuItem_OnClick" />
+        <Button
+            android:layout_width="152px"
+            android:layout_height="152px"
+            android:id="@+id/main_menu_me_btn"
+            android:background="@drawable/menu_me_off"
+            android:tag="5sw-sh-glt"
+            android:longClickable="false"
+            android:onClick="MenuItem_OnClick" />
+        <Button
+            android:layout_width="152px"
+            android:layout_height="96px"
+            android:id="@+id/main_menu_logo_btn"
+            android:tag="6sw-sh-glt"
+            android:longClickable="false"
+            android:background="#fff6f6f6" />
+    </LinearLayout>
+</FrameLayout>

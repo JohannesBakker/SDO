@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/background"
+    android:id="@+id/splash_view"
+    style="@android:style/Theme.NoTitleBar"
+    android:tag="fw-fh">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/splash_content"
+        android:tag="fw-fh">
+        <ImageView
+            android:src="@drawable/splash_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="fw-fh"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:src="@drawable/logo_itz"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:tag="sw-sh-gch-st"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200px" />
+        <TextView
+            android:text="RETAIL RANGER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="ww-wh-gch-st-sfont-ol"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="70px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="450px" />
+        <TextView
+            android:text="MOBILE ASSISTANT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="ww-wh-sfont-ol-gch-st"
+            android:textSize="35px"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="550px" />
+        <ImageView
+            android:src="@drawable/logo_itz"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:scaleType="centerInside"
+            android:tag="sw-sh-sl-sb-gb"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40px"
+            android:layout_marginBottom="40px" />
+        <ImageView
+            android:src="@drawable/logo_sodexo"
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:tag="sw-sh-grb-sr-sb"
+            android:scaleType="centerInside"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="40px" />
+    </FrameLayout>
+</FrameLayout>

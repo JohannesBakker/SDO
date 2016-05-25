@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:tag="ww-wh"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="600px"
+        android:layout_height="140px"
+        android:tag="sw-sh"
+        android:background="#ffeeeeee">
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="138px"
+            android:tag="fw-sh">
+            <ImageView
+                android:src="@drawable/accounts_cell_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="fw-fh"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true" />
+            <TextView
+                android:text="COKE"
+                android:layout_width="400px"
+                android:layout_height="50px"
+                android:id="@+id/pricesresult_name_tv"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="38px"
+                android:textColor="#ff555555"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="22px"
+                android:lines="1" />
+            <TextView
+                android:text="$1.79"
+                android:layout_width="120px"
+                android:layout_height="50px"
+                android:id="@+id/pricesresult_optimum_price_tv"
+                android:tag="sw-sh-sl-st-sfont-or"
+                android:textSize="40px"
+                android:textColor="#ff787878"
+                android:gravity="center_vertical|right"
+                android:layout_marginLeft="450px"
+                android:layout_marginTop="22px"
+                android:lines="1" />
+            <TextView
+                android:text="CARBONATE SOFT DRINK"
+                android:layout_width="380px"
+                android:layout_height="40px"
+                android:id="@+id/pricesresult_family_tv"
+                android:tag="sw-sh-sl-st-sfont-ol"
+                android:textSize="24px"
+                android:textColor="#ff787878"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="78px"
+                android:lines="1" />
+            <TextView
+                android:text="OPTIMUM PRICING"
+                android:layout_width="220px"
+                android:layout_height="40px"
+                android:tag="sw-sh-sl-st-sfont-kr"
+                android:gravity="center_vertical|right"
+                android:textSize="20px"
+                android:textColor="#ff7aec0c"
+                android:layout_marginLeft="350px"
+                android:layout_marginTop="78px" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>
